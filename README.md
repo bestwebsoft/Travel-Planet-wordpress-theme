@@ -3,8 +3,7 @@
 
 Travel Planet is a theme for your website, simple to use and customize. Travel Planet has modern design, it is very easy to use and suitable for different websites.
 
-
-
+<img src="http://bestwebsoft.com/wp-content/uploads/2014/05/travel-planet-wp-banner.jpg" />
 
 <a href="http://bestwebsoft.com/theme/travel-planet/#description" target=_blank>Description</a> |
 <a href="http://bestwebsoft.com/theme/travel-planet/#installation" target=_blank>Installation</a> | 
