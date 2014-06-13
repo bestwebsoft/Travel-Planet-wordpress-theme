@@ -3,7 +3,7 @@ Contributors: the BestWebSoft team
 Tags: white, grey, orange, fixed-layout, right-sidebar, threaded-comments, sticky-post, custom-background, custom-header, custom-menu, translation-ready, featured-images
 Requires at least: 3.7
 Tested up to: 3.9.1
-Stable tag: 1.4
+Stable tag: 1.5
 License: GNU General Public License V3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Travel Planet WordPress Theme, Copyright 2014 BestWebSoft.com
@@ -11,7 +11,7 @@ Travel Planet is distributed under the terms of the GNU GPL
 
 == Description ==
 
-Travel Planet is a theme for your website, simple to use and customize. Travel Planet has modern design, it is very easy to use and suitable for different websites.
+Are you an traveler who looks for a perfect theme that would highlight your stories without being too distracting? Or are you a handyman who wishes to share the nowledge with people worldwide via simplistic yet utterly elegant blog? Or maybe you seek a theme with an exquisite and balanced interface for a travel or photography magazine? Whether your purposes match or transcend our guesses, we are delighted to introduce Travel Planet - a streamlined and professional theme that will serve as a perfect entourage for your ideas. Travel Planet is ideal for Tourist Agencies, Travel Diaries, Tourist Destinations, Travel Magazines, Travel Guides, Photography, Handmade and DIY Workshops, Cuisine, Event Information, Culture Overviews and Tutorials, or any other purposes you feel are appropriate.
 
 = Features =
 
@@ -121,6 +121,9 @@ You can use background image for the title of your website. Use the menu to sele
 
 == Changelog ==
 
+= V1.5 - 10.06.2014 =
+* Update: We updated readme.txt.
+
 = V1.4 - 19.05.2014 =
 * Update: Codex errors of function.php are fixed. 
 
@@ -137,6 +140,9 @@ You can use background image for the title of your website. Use the menu to sele
 * Release date of Travel Planet.
 
 == Upgrade Notice == 
+
+= V1.5 =
+We updated readme.txt.
 
 = V1.4 =
 Codex errors of function.php are fixed. 
