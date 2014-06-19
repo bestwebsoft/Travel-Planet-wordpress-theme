@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: travel-planet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-15 18:09+0300\n"
+"POT-Creation-Date: 2014-06-16 11:55+0300\n"
 "PO-Revision-Date: \n"
-"Last-Translator: \n"
+"Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
 "Language-Team: BestWebSoft <info@bestwebsoft.com>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -17,61 +17,27 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../index.php:23
-#: ../archive.php:39
-#: ../category.php:35
-msgid "Not found any Posts"
-msgstr "Не найдено ни одного поста"
-
-#: ../index.php:26
-#: ../archive.php:42
-#: ../404.php:11
-#: ../category.php:38
-msgid "This is somewhat embarrassing, isn&rsquo;t it?"
-msgstr "Немного неудобно, не правда ли?"
-
-#: ../index.php:30
-#: ../search.php:25
-#: ../archive.php:46
-#: ../404.php:15
-#: ../category.php:42
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "Кажется, мы не можем найти то, что вы ищете. Возможно, поиск сможет помочь."
-
-#: ../search.php:12
-msgid "Search Results for:"
-msgstr "Результаты поиска для:"
-
-#: ../search.php:21
-msgid "Nothing Found"
-msgstr "Ничего не найдено"
-
 #: ../content.php:13
-#: ../image.php:15
-msgid "Posted on"
+msgid "Posted by"
 msgstr "Опубликовано"
 
-#: ../content.php:16
+#: ../content.php:15
+msgid "on"
+msgstr "на"
+
+#: ../content.php:18
 #: ../image.php:25
 msgid "in"
 msgstr "в"
 
-#: ../content.php:28
+#: ../content.php:30
 msgid "Pages:"
 msgstr "Страницы:"
 
-#: ../content.php:39
+#: ../content.php:41
 #: ../image.php:83
 msgid "Edit"
 msgstr "Редактировать"
-
-#: ../footer.php:16
-msgid "Powered by"
-msgstr "При поддержке"
-
-#: ../footer.php:18
-msgid "and"
-msgstr "и"
 
 #: ../archive.php:15
 msgid "Daily Archives:"
@@ -94,38 +60,55 @@ msgid "Y"
 msgstr "Г"
 
 #: ../archive.php:21
+msgid "Archives of"
+msgstr "Архив"
+
+#: ../archive.php:23
 msgid "Archives"
 msgstr "Архив"
 
-#: ../archive.php:32
+#: ../archive.php:34
 #: ../category.php:28
 msgid "Previous page"
 msgstr "Предыдущая страница"
 
-#: ../archive.php:33
+#: ../archive.php:35
 #: ../category.php:29
 msgid "Next page"
 msgstr "Следующая страница"
 
-#: ../comments.php:23
-msgid "One comment on"
-msgstr "Один комментарий на"
+#: ../archive.php:41
+#: ../index.php:23
+#: ../category.php:35
+msgid "Not found any Posts"
+msgstr "Не найдено ни одного поста"
 
-#: ../comments.php:23
-msgid "comments on"
-msgstr "комментариев на"
+#: ../archive.php:44
+#: ../index.php:26
+#: ../category.php:38
+#: ../404.php:11
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr "Немного неудобно, не правда ли?"
 
-#: ../comments.php:32
-msgid "Older comments"
-msgstr "Ранние комментарии"
+#: ../archive.php:48
+#: ../index.php:30
+#: ../search.php:25
+#: ../category.php:42
+#: ../404.php:15
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Кажется, мы не можем найти то, что вы ищете. Возможно, поиск сможет помочь."
 
-#: ../comments.php:35
-msgid "Newer comments"
-msgstr "Поздние комментарии"
+#: ../footer.php:16
+msgid "Powered by"
+msgstr "При поддержке"
 
-#: ../comments.php:42
-msgid "Comments are closed."
-msgstr "Комментирование закрыто."
+#: ../footer.php:18
+msgid "and"
+msgstr "и"
+
+#: ../image.php:15
+msgid "Posted on"
+msgstr "Опубликовано"
 
 #: ../image.php:21
 msgid "at"
@@ -146,10 +129,6 @@ msgstr "Предыдущий"
 #: ../image.php:78
 msgid "Next"
 msgstr "Следующий"
-
-#: ../category.php:14
-msgid "Category archives:"
-msgstr "Архив категорий:"
 
 #: ../functions.php:62
 msgid "Navigation Menu"
@@ -191,23 +170,23 @@ msgstr "Основное место для виджетов"
 msgid "Appears in the right sidebar."
 msgstr "Появится в правом сайдбаре."
 
-#: ../functions.php:213
+#: ../functions.php:217
 msgid "Slider"
 msgstr "Слайдер"
 
-#: ../functions.php:234
+#: ../functions.php:238
 msgid "Do you wish to add this post to slider?"
 msgstr "Хотите добавить этот пост в слайдер?"
 
-#: ../functions.php:236
+#: ../functions.php:240
 msgid "Notice"
 msgstr "Внимание"
 
-#: ../functions.php:238
+#: ../functions.php:242
 msgid "the featured picture must be 940px width to 315px height or bigger for best performance."
 msgstr "миниатюра должна быть не менее 940px по ширине и 315px по высоте или более для лучшего отображения слайдера."
 
-#: ../functions.php:242
+#: ../functions.php:246
 msgid "Caption for post in slider:"
 msgstr "Комментарий для поста в слайдере:"
 
@@ -215,20 +194,56 @@ msgstr "Комментарий для поста в слайдере:"
 msgid "Enter search keyword"
 msgstr "Ключевое слово для поиска"
 
+#: ../search.php:12
+msgid "Search Results for:"
+msgstr "Результаты поиска для:"
+
+#: ../search.php:21
+msgid "Nothing Found"
+msgstr "Ничего не найдено"
+
+#: ../category.php:14
+msgid "Category archives:"
+msgstr "Архив категорий:"
+
+#: ../comments.php:23
+msgid "One comment on"
+msgstr "Один комментарий на"
+
+#: ../comments.php:23
+msgid "comments on"
+msgstr "комментариев на"
+
+#: ../comments.php:32
+msgid "Older comments"
+msgstr "Ранние комментарии"
+
+#: ../comments.php:35
+msgid "Newer comments"
+msgstr "Поздние комментарии"
+
+#: ../comments.php:42
+msgid "Comments are closed."
+msgstr "Комментирование закрыто."
+
 #~ msgid "Home"
 #~ msgstr "Домашняя страница"
 
 #, fuzzy
 #~ msgid "&nbsp;&ldquo;%2$s&rdquo;"
 #~ msgstr "Один комментарий на &ldquo;%2$s&rdquo;"
+
 #~ msgid "&larr; "
 #~ msgstr "&larr; "
+
 #~ msgid " &rarr;"
 #~ msgstr " &rarr;"
+
 #~ msgid "in "
 #~ msgstr "в "
+
 #~ msgid "&lsaquo;&lsaquo; Previous"
 #~ msgstr "&lsaquo;&lsaquo; Предыдущий"
+
 #~ msgid "Next &rsaquo;&rsaquo;"
 #~ msgstr "Следующий &rsaquo;&rsaquo;"
-

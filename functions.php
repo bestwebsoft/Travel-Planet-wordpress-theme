@@ -191,7 +191,11 @@ function trvlplnt_header_style() {
 	<style type="text/css">
 	<?php if ( ! ( 'blank' == $header_color ) ) : ?>
 		#site-header a,
-		#site-description {
+		#site-description,
+		#trvlplnt-nav-menu a,
+		#trvlplnt-nav-menu a:visited,
+		#trvlplnt-nav-menu a:hover,
+		#trvlplnt-nav-menu a:active {
 			color: #<?php echo $header_color; ?> !important;
 		}
 	<?php endif;

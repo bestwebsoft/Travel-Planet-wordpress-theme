@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: travel-planet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-15 18:09+0300\n"
+"POT-Creation-Date: 2014-06-16 11:40+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: BestWebSoft <support@bestwebsoft.com>\n"
@@ -18,13 +18,13 @@ msgstr ""
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../index.php:23
-#: ../archive.php:39
+#: ../archive.php:41
 #: ../category.php:35
 msgid "Not found any Posts"
 msgstr ""
 
 #: ../index.php:26
-#: ../archive.php:42
+#: ../archive.php:44
 #: ../404.php:11
 #: ../category.php:38
 msgid "This is somewhat embarrassing, isn&rsquo;t it?"
@@ -32,7 +32,7 @@ msgstr ""
 
 #: ../index.php:30
 #: ../search.php:25
-#: ../archive.php:46
+#: ../archive.php:48
 #: ../404.php:15
 #: ../category.php:42
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
@@ -47,20 +47,23 @@ msgid "Nothing Found"
 msgstr ""
 
 #: ../content.php:13
-#: ../image.php:15
-msgid "Posted on"
+msgid "Posted by"
 msgstr ""
 
-#: ../content.php:16
+#: ../content.php:15
+msgid "on"
+msgstr ""
+
+#: ../content.php:18
 #: ../image.php:25
 msgid "in"
 msgstr ""
 
-#: ../content.php:28
+#: ../content.php:30
 msgid "Pages:"
 msgstr ""
 
-#: ../content.php:39
+#: ../content.php:41
 #: ../image.php:83
 msgid "Edit"
 msgstr ""
@@ -94,15 +97,19 @@ msgid "Y"
 msgstr ""
 
 #: ../archive.php:21
+msgid "Archives of"
+msgstr ""
+
+#: ../archive.php:23
 msgid "Archives"
 msgstr ""
 
-#: ../archive.php:32
+#: ../archive.php:34
 #: ../category.php:28
 msgid "Previous page"
 msgstr ""
 
-#: ../archive.php:33
+#: ../archive.php:35
 #: ../category.php:29
 msgid "Next page"
 msgstr ""
@@ -125,6 +132,10 @@ msgstr ""
 
 #: ../comments.php:42
 msgid "Comments are closed."
+msgstr ""
+
+#: ../image.php:15
+msgid "Posted on"
 msgstr ""
 
 #: ../image.php:21
@@ -191,23 +202,23 @@ msgstr ""
 msgid "Appears in the right sidebar."
 msgstr ""
 
-#: ../functions.php:213
+#: ../functions.php:217
 msgid "Slider"
 msgstr ""
 
-#: ../functions.php:234
+#: ../functions.php:238
 msgid "Do you wish to add this post to slider?"
 msgstr ""
 
-#: ../functions.php:236
+#: ../functions.php:240
 msgid "Notice"
 msgstr ""
 
-#: ../functions.php:238
+#: ../functions.php:242
 msgid "the featured picture must be 940px width to 315px height or bigger for best performance."
 msgstr ""
 
-#: ../functions.php:242
+#: ../functions.php:246
 msgid "Caption for post in slider:"
 msgstr ""
 

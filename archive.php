@@ -17,6 +17,8 @@ get_header(); ?>
 					printf( __( 'Monthly Archives:', 'trvlplnt' ) . '&nbsp;%s', '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'trvlplnt' ) ) . '</span>' );
 				elseif ( is_year() ) :
 					printf( __( 'Yearly Archives:', 'trvlplnt' ) . '&nbsp;%s', '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'trvlplnt' ) ) . '</span>' );
+				elseif ( is_author() ) :
+					print( __( 'Archives of', 'trvlplnt' ) . '&nbsp;' . '<span>' . get_the_author() . '</span>' );
 				else :
 					_e( 'Archives', 'trvlplnt' );
 				endif; ?>

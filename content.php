@@ -10,7 +10,9 @@
 	</header>
 	<?php if ( ! is_page() ) : ?>
 		<p class="postmetadata">
-			<?php _e( 'Posted on', 'trvlplnt' ); ?>
+			<?php _e( 'Posted by', 'trvlplnt' ); ?> 
+			<?php the_author_posts_link(); ?>
+			<?php _e( 'on', 'trvlplnt' ); ?>
 			<a href="<?php the_permalink(); ?>" title="<?php echo get_the_date( 'j F, Y' ); ?>"><?php echo get_the_date( 'j F, Y' ); ?></a>
 			<?php if ( has_category() ) : 
 				printf( __( 'in', 'trvlplnt' ) . '&nbsp;' );

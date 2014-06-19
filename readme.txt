@@ -3,7 +3,7 @@ Contributors: the BestWebSoft team
 Tags: white, grey, orange, fixed-layout, right-sidebar, threaded-comments, sticky-post, custom-background, custom-header, custom-menu, translation-ready, featured-images
 Requires at least: 3.7
 Tested up to: 3.9.1
-Stable tag: 1.5
+Stable tag: 1.6
 License: GNU General Public License V3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Travel Planet WordPress Theme, Copyright 2014 BestWebSoft.com
@@ -121,6 +121,10 @@ You can use background image for the title of your website. Use the menu to sele
 
 == Changelog ==
 
+= V1.6 - 16.06.2014 =
+* Update: Displaing links to posts author archive page is added.
+* Update: Color setting of main navigation menu is now similar to site header. 
+
 = V1.5 - 10.06.2014 =
 * Update: We updated readme.txt.
 
@@ -140,6 +144,10 @@ You can use background image for the title of your website. Use the menu to sele
 * Release date of Travel Planet.
 
 == Upgrade Notice == 
+
+= V1.6 =
+Displaing links to posts author archive page is added. 
+Customize header navigation is added. 
 
 = V1.5 =
 We updated readme.txt.
