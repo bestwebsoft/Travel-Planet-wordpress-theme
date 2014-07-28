@@ -1,21 +1,17 @@
 ( function( $ ) {
 	$(document).ready(function() {
 
-		/*refresh all forms*/
-		// $( 'input:checked' ).removeAttr( 'checked' );
-		// $( 'input:file' ).val( '' );
-
-		// trvlplnt theme slider ---------------
+		/* trvlplnt theme slider */
 		if ( $( this ).find( '.trvlplnt-slider' ) ) {
 			var isTimeToSlide = true; // freeze slider until the animation
 			var sliderBox = 0;
 			var sliderChild = $( '.trvlplnt-slider' ).children(); 
-			// run the currently selected effect
+			/* run the currently selected effect */
 			var callbackSlide = function( elem ) {
 				sliderBox = elem;
 			}
 
-			// Set navigation
+			/* Set navigation */
 			$( '.trvlplnt-slider-to-right' ).click(function() {
 				if ( isTimeToSlide ) {
 					sliderMove( 'right' );
@@ -29,7 +25,7 @@
 				return false;
 			} );
 
-			// Set slider
+			/* Set slider */
 			function sliderMove( leftRight ) {
 				isTimeToSlide = false;  
 				var slide;
@@ -44,10 +40,10 @@
 						slide = 0;
 					}
 				}
-				// Show sliderBox navigation
+				/* Show sliderBox navigation */
 				sliderChild.eq( slide ).show();
 
-				// Show sliderBox effects
+				/* Show sliderBox effects */
 				sliderChild.eq( sliderBox ).effect( 'drop', 
 					{
 						direction: leftRight == 'left' ? 'right' : 'left' 
@@ -61,10 +57,10 @@
 				}, 900); 
 			};
 
-		} // trvlplnt theme slider
+		} /* trvlplnt theme slider */
 
 
-		// trvlplnt theme checkboxes  -----------------------------------------------------
+		/* trvlplnt theme checkboxes */
 		if ( $( this ).find( 'input[type="checkbox"]' ) ) {
 			var fakeContainerCheck = $( '<div class="trvlplnt-fake-checkbox-container" />' ),
 			fakeCheckbox = $( '<div class="trvlplnt-fake-checkbox" />' ),
@@ -107,10 +103,10 @@
 					}
 				});
 			});
-		} // trvlplnt theme checkboxes
+		} /* trvlplnt theme checkboxes */
 
 
-		// trvlplnt theme radio  -----------------------------------------------------------
+		/* trvlplnt theme radio */
 		if ( $( this ).find( 'input[type="radio"]' ) ) {
 			var fakeRagio = $( '<div class="trvlplnt-fake-radio-container" />' ),
 			fakeRadio = $( '<div class="trvlplnt-fake-radio" />' ),
@@ -155,19 +151,19 @@
 					}
 				});
 			});
-		} // trvlplnt theme radio
+		} /* trvlplnt theme radio */
 
-		// trvlplnt scroll to top -------------------------------------------------------
+		/* trvlplnt scroll to top */
 		$( 'a[href="#wrapper"]' ).on( 'click', function( e ) {
 			e.preventDefault();
-			//html - IE, FF, body - Chrome, Safari
+			/* html - IE, FF, body - Chrome, Safari */
 			$( 'html, body' ).animate({
 				scrollTop: $( '#wrapper' ).offset().top
 			}, 600);
 		});
 
 
-		// trvlplnt theme select --------------------------------------------------------
+		/* trvlplnt theme select */
 
 		/*select section restyle*/
 		var test = $( 'select' ).size();
@@ -197,11 +193,10 @@
 			/*remove active option from init select*/
 			$( this ).parent().parent().prev( 'select' ).find( 'option' ).removeAttr( 'selected' );
 			/*add atrr selected to select*/
-			$( this ).parent().parent().prev( 'select' ).find( 'option' ).eq( ( $( this ).attr( 'name' ) ) ).attr( 'selected', 'selected' );
+			$( this ).parent().parent().prev( 'select' ).find( 'option' ).eq( ( $( this ).attr( 'name' ) ) ).attr( 'selected', 'selected' ).trigger( 'change' );
 		});
 
-
-		// // trvlplnt theme file loader --------------------------------------------------------
+		/* trvlplnt theme file loader */
 		if ( $( this ).find( 'input[type="file"]' ) ) {
 			$( this ).find( 'input[type="file"]' ).each(function() {
 				/* create fake trvlplnt-upload-file instument */
@@ -231,24 +226,59 @@
 					$( th ).trigger( 'click' );
 				});
 			});
-		};// trvlplnt theme file loader
+		};/* trvlplnt theme file loader */
 
 
-		// trvlplnt theme reset button ---------------------------------------------------
+		/* trvlplnt theme reset button */
 		$( this ).find( 'input[type="reset"]' ).click( function() {
 			var forms = $( this ).parents( 'form' ).first();
-			forms.find( '.trvlplnt-select-block' ).find( '.trvlplnt-option.index-0' ).click();
 			forms.find( '.trvlplnt-fake-radio, .trvlplnt-fake-checkbox' ).removeClass( 'selected' );
 			$( forms )[0].reset();
 			forms.find( 'input[type="file"]' ).change();
-			e.preventDefault;
-		});// trvlplnt theme reset button
+		});/* trvlplnt theme reset button */
 
 	});
 } )( jQuery );
 
+( function( $ ) {
+	$(document).ready(function() {
+		/* Check of previous selected items */
+		$( 'select' ).each(function() {
+			var index = $( this ).find( "option[selected]" ).index();
+			if (index >= 0) {
+				/*add attr selected to select*/
+				var selected_select = $( this ).find( "option[selected]" ).parent().next().find( ".trvlplnt-options .trvlplnt-option[name='" + index + "']" );
+				selected_select.addClass( 'trvlplnt-option-selected' );
+				/*write text to active opt*/
+				selected_select.parent().prev( '.trvlplnt-active-opt' ).find( 'div:first' ).text( selected_select.text() );
+			}
+		});
+		/* Clear select elements */
+		$( 'input:reset' ).click( function() {
+			/* Clear original selects. */
+			$( 'select' ).each(function() {
+				/* set path */
+				var clear_select = $( this ).find( "option:first" );
+				var clear_selected_select = $( this ).find( "option[selected]" );
+				/* clear active opt */
+				$( clear_selected_select ).removeAttr( 'selected' );
+				$( clear_select ).attr( 'selected', 'selected' );
+			});
+			/* Clear custom selects. */
+			$( '.trvlplnt-select' ).each(function() {
+				/* set path */
+				var clear_select = $( this ).find( ".trvlplnt-option[name='0']" );
+				var clear_selected_select = $( this ).find( ".trvlplnt-options" ).find( ".trvlplnt-option-selected" );
+				/* clear active opt */
+				clear_select.parent().prev( '.trvlplnt-active-opt' ).find( 'div:first' ).text( clear_select.text() );
+				clear_selected_select.removeClass( 'trvlplnt-option-selected' );
+			});
+			e.preventDefault;
+		});
+	});
+} )( jQuery );
 
-// trvlplnt theme placeholder script -------------------------------------------------
+/* trvlplnt theme placeholder script */
 function setClear( elem ) {
     if (elem.value == elem.defaultValue) {
         elem.value = '';
