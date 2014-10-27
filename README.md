@@ -5,12 +5,12 @@ Travel Planet is a theme for your website, simple to use and customize. Travel P
 
 <img src="http://bestwebsoft.com/wp-content/uploads/2014/05/travel-planet-wp-banner.jpg" />
 
-<a href="http://bestwebsoft.com/theme/travel-planet/#description" target=_blank>Description</a> |
-<a href="http://bestwebsoft.com/theme/travel-planet/#installation" target=_blank>Installation</a> | 
-<a href="http://bestwebsoft.com/theme/travel-planet/#faq" target=_blank>FAQ</a> | 
-<a href="http://bestwebsoft.com/theme/travel-planet/#screenshots" target=_blank>Screenshots</a> | 
-<a href="http://bestwebsoft.com/theme/travel-planet/#changelog" target=_blank>Changelog</a> | 
-<a href="http://bestwebsoft.com/theme/travel-planet/#download" target=_blank>Download</a>
+<a href="http://bestwebsoft.com/products/travel-planet/description" target=_blank>Description</a> |
+<a href="http://bestwebsoft.com/products/travel-planet/installation" target=_blank>Installation</a> | 
+<a href="http://bestwebsoft.com/products/travel-planet/faq" target=_blank>FAQ</a> | 
+<a href="http://bestwebsoft.com/products/travel-planet/screenshots" target=_blank>Screenshots</a> | 
+<a href="http://bestwebsoft.com/products/travel-planet/changelog" target=_blank>Changelog</a> | 
+<a href="http://bestwebsoft.com/products/travel-planet/download" target=_blank>Download</a>
 
 Features
 --------------------
@@ -29,7 +29,7 @@ Translation
 --------------------
 * Russian (ru_RU)
 
-If you would like to create your own language pack or update the existing one, you can send the text of PO and MO files for BestWebSoft and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files Poedit. 
+If you create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text in PO and MO files</a> for <a href="http://support.bestwebsoft.com" target="_blank">BestWebSoft</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
 
 Copyrights for Resources used in this theme
 --------------------
