@@ -222,11 +222,11 @@
 						}
 					});
 				});
-				$( inp.parent() ).on( 'mousedown', function() {
+				$( inp.parent() ).click( function() {
 					$( th ).trigger( 'click' );
 				});
 			});
-		};/* trvlplnt theme file loader */
+		}/* trvlplnt theme file loader */
 
 
 		/* trvlplnt theme reset button */

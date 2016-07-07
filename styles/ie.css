@@ -2,16 +2,15 @@
 File contains styles for IE lt 9
 */
 
-
 /* 2.3 Add theme elements styles -----------*/
 
 .round {
-	behavior:url(../js/PIE.htc);
+	behavior: url(../js/PIE.htc);
 }
 
 .shadow {
 	box-shadow: 0px 1px 2px #e0e0e0;
-    behavior:url(../js/PIE.htc);
+	behavior: url(../js/PIE.htc);
 }
 
 #trvlplnt-slider {
@@ -44,14 +43,14 @@ File contains styles for IE lt 9
 	margin-bottom: 20px;
 }
 
-#trvlplnt-nav-menu ul li { 
+#trvlplnt-nav-menu ul li {
 	z-index: 100;
 }
 
 /* 4.1 Global widgets style ------*/
 
 div.widget {
-	behavior:url(../js/PIE.htc);
+	behavior: url(../js/PIE.htc);
 }
 
 h2.widgettitle {
@@ -61,7 +60,7 @@ h2.widgettitle {
 /* 4.2 Plastic slider widget style ------*/
 
 .trvlplnt-slider {
-	behavior:url(../js/PIE.htc);
+	behavior: url(../js/PIE.htc);
 }
 
 .trvlplnt-slider-to-left,
@@ -69,7 +68,7 @@ h2.widgettitle {
 	filter: alpha(Opacity=20); /*opacity for IE*/
 }
 
-.trvlplnt-slider-to-left:hover, 
+.trvlplnt-slider-to-left:hover,
 .trvlplnt-slider-to-right:hover {
 	filter: alpha(Opacity=60); /*opacity for IE*/
 }
@@ -85,23 +84,23 @@ div.widget_search {
 }
 
 .search-box input.trvlplnt-search {
-	behavior:url(../js/PIE.htc);
 	padding: 15px 10px 5px 10px;
+	behavior: url(../js/PIE.htc);
 }
 
 .search-box input.trvlplnt-search-button {
-	behavior:url(../js/PIE.htc);
+	behavior: url(../js/PIE.htc);
 }
 
 /* 5.3 List types ------*/
 
 .trvlplnt-text dl dt,
 .trvlplnt-text .gallery dl dt {
-    font-size: 15px;
+	font-size: 15px;
 }
 
-.trvlplnt-text dl dd, 
-.trvlplnt-text ol li, 
+.trvlplnt-text dl dd,
+.trvlplnt-text ol li,
 .trvlplnt-text ul li {
 	font-size: 13px;
 }
@@ -111,50 +110,49 @@ div.widget_search {
 .trvlplnt-text input[type=text],
 .trvlplnt-text input[type=password],
 .trvlplnt-text textarea,
-.trvlplnt-text input[type="reset"], 
+.trvlplnt-text input[type="reset"],
 .trvlplnt-text input[type="submit"] {
-	behavior:url(../js/PIE.htc);
+	behavior: url(../js/PIE.htc);
 }
 
 .trvlplnt-radio-item-container,
 .trvlplnt-checkbox-item-container {
-	display:inline; /*Only in IE*/
-	zoom:1; /*IE hasLayout*/
+	display: inline; /*Only in IE*/
+	zoom: 1; /*IE hasLayout*/
 }
 
 /* 5.4.2 Select box -------------- */
 
 select {
 	-ms-appearance: button; /* Internet Explorer */
-	behavior:url(../js/PIE.htc);
+	behavior: url(../js/PIE.htc);
 }
 
 .trvlplnt-select h3 {
-	overflow:hidden;
+	overflow: hidden;
 	-ms-text-overflow: ellipsis;
 }
 
 div.trvlplnt-select {
-	behavior:url(../js/PIE.htc);
+	behavior: url(../js/PIE.htc);
 }
 
 /* 5.4.3 Fileload instrument styles -------------- */
 
-
 .trvlplnt-fileload {
-	behavior:url(../js/PIE.htc);
+	behavior: url(../js/PIE.htc);
 }
 
 .trvlplnt-fileload-input {
-	background: -ms-linear-gradient(top,  #ffffff 0%,#eef2f4 100%); /* IE10+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eef2f4',GradientType=0 ); /* IE6-8 */
+	background: -ms-linear-gradient(top, #ffffff 0%, #eef2f4 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eef2f4', GradientType=0); /* IE6-8 */
 }
 
 .trvlplnt-fileload-browse {
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-	behavior:url(../js/PIE.htc);
+	behavior: url(../js/PIE.htc);
 }
 
 .trvlplnt-fileload:active .trvlplnt-fileload-browse {
-	behavior:url(../js/PIE.htc);
+	behavior: url(../js/PIE.htc);
 }

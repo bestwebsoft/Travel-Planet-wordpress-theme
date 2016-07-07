@@ -1,102 +1,86 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: travel-planet\n"
+"Project-Id-Version: Travel Planet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-16 11:55+0300\n"
+"POT-Creation-Date: 2016-07-07 18:52+0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: bestwebsoft.com <plugins@bestwebsoft.com>\n"
-"Language-Team: BestWebSoft <info@bestwebsoft.com>\n"
-"Language: \n"
+"Language-Team: bestwebsoft.com <wp_theme@bestwebsoft.com>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Russian\n"
-"X-Poedit-Country: Russia\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_nx:1,2,4c;esc_attr__;esc_attr_e;"
+"esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.8.4\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../content.php:13
-msgid "Posted by"
-msgstr "Опубликовано"
-
-#: ../content.php:15
-msgid "on"
-msgstr "на"
-
-#: ../content.php:18
-#: ../image.php:25
-msgid "in"
-msgstr "в"
-
-#: ../content.php:30
-msgid "Pages:"
-msgstr "Страницы:"
-
-#: ../content.php:41
-#: ../image.php:83
-msgid "Edit"
-msgstr "Редактировать"
-
-#: ../archive.php:15
-msgid "Daily Archives:"
-msgstr "Архив за день:"
-
-#: ../archive.php:17
-msgid "Monthly Archives:"
-msgstr "Архив за месяц:"
-
-#: ../archive.php:17
-msgid "F Y"
-msgstr "М Г"
-
-#: ../archive.php:19
-msgid "Yearly Archives:"
-msgstr "Архив за год:"
-
-#: ../archive.php:19
-msgid "Y"
-msgstr "Г"
-
-#: ../archive.php:21
-msgid "Archives of"
-msgstr "Архив"
-
-#: ../archive.php:23
-msgid "Archives"
-msgstr "Архив"
-
-#: ../archive.php:34
-#: ../category.php:28
-msgid "Previous page"
-msgstr "Предыдущая страница"
-
-#: ../archive.php:35
-#: ../category.php:29
-msgid "Next page"
-msgstr "Следующая страница"
-
-#: ../archive.php:41
-#: ../index.php:23
-#: ../category.php:35
-msgid "Not found any Posts"
-msgstr "Не найдено ни одного поста"
-
-#: ../archive.php:44
-#: ../index.php:26
-#: ../category.php:38
-#: ../404.php:11
+#: ../404.php:12 ../archive.php:34 ../index.php:27
 msgid "This is somewhat embarrassing, isn&rsquo;t it?"
 msgstr "Немного неудобно, не правда ли?"
 
-#: ../archive.php:48
-#: ../index.php:30
-#: ../search.php:25
-#: ../category.php:42
-#: ../404.php:15
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "Кажется, мы не можем найти то, что вы ищете. Возможно, поиск сможет помочь."
+#: ../404.php:16 ../archive.php:38 ../index.php:31 ../search.php:27
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Кажется, мы не можем найти то, что вы ищете. Возможно, поиск сможет помочь."
+
+#: ../archive.php:24
+msgid "Previous page"
+msgstr "Предыдущая страница"
+
+#: ../archive.php:25
+msgid "Next page"
+msgstr "Следующая страница"
+
+#: ../archive.php:31 ../index.php:24
+msgid "Not found any Posts"
+msgstr "Не найдено ни одного поста"
+
+#: ../comments.php:25
+#, php-format
+msgid "One comment on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comments on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s комментарий к &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s комментария к &ldquo;%2$s&rdquo;"
+msgstr[2] "%1$s комментариев к &ldquo;%2$s&rdquo;"
+
+#: ../comments.php:33
+msgid "Older comments"
+msgstr "Ранние комментарии"
+
+#: ../comments.php:36
+msgid "Newer comments"
+msgstr "Поздние комментарии"
+
+#: ../comments.php:43
+msgid "Comments are closed."
+msgstr "Комментирование закрыто."
+
+#: ../content.php:20
+msgid "Posted by "
+msgstr "Опубликовал "
+
+#: ../content.php:22
+msgid " on"
+msgstr " "
+
+#: ../content.php:30 ../image.php:26
+msgid "in"
+msgstr "в"
+
+#: ../content.php:43
+msgid "Pages:"
+msgstr "Страницы:"
+
+#: ../content.php:56 ../image.php:96
+msgid "Edit"
+msgstr "Редактировать"
 
 #: ../footer.php:16
 msgid "Powered by"
@@ -106,132 +90,142 @@ msgstr "При поддержке"
 msgid "and"
 msgstr "и"
 
-#: ../image.php:15
-msgid "Posted on"
-msgstr "Опубликовано"
-
-#: ../image.php:21
-msgid "at"
-msgstr "в"
-
-#: ../image.php:22
-msgid "Link to full-size image"
-msgstr "Ссылка на полноразмерное изображение"
-
-#: ../image.php:26
-msgid "Return to"
-msgstr "Вернуться к"
-
-#: ../image.php:77
-msgid "Previous"
-msgstr "Предыдущий"
-
-#: ../image.php:78
-msgid "Next"
-msgstr "Следующий"
-
-#: ../functions.php:62
+#: ../functions.php:72
 msgid "Navigation Menu"
 msgstr "Основное навигационное меню"
 
-#: ../functions.php:90
+#: ../functions.php:106
 msgid "Choose file..."
 msgstr "Выберите файл..."
 
-#: ../functions.php:91
+#: ../functions.php:107
 msgid "File is not selected."
 msgstr "Файл не выбран."
 
-#: ../functions.php:110
-msgid "Page"
-msgstr "Страница"
-
-#: ../functions.php:123
+#: ../functions.php:120
 msgid "Category:"
 msgstr "Категория:"
 
-#: ../functions.php:129
+#: ../functions.php:126
 msgid "Tag:"
 msgstr "Тэги:"
 
-#: ../functions.php:132
+#: ../functions.php:129
 msgid "Archive for:"
 msgstr "Архив для:"
 
-#: ../functions.php:146
+#: ../functions.php:142
 msgid "Page not found"
 msgstr "Страница не найдена"
 
-#: ../functions.php:155
+#: ../functions.php:144
+msgid "Search results for:"
+msgstr "Результаты поиска для:"
+
+#: ../functions.php:152
 msgid "Main Widget Area"
 msgstr "Основное место для виджетов"
 
-#: ../functions.php:157
+#: ../functions.php:154
 msgid "Appears in the right sidebar."
 msgstr "Появится в правом сайдбаре."
 
-#: ../functions.php:217
+#: ../functions.php:212
 msgid "Slider"
 msgstr "Слайдер"
 
-#: ../functions.php:238
+#: ../functions.php:232
 msgid "Do you wish to add this post to slider?"
 msgstr "Хотите добавить этот пост в слайдер?"
 
-#: ../functions.php:240
+#: ../functions.php:234
 msgid "Notice"
 msgstr "Внимание"
 
-#: ../functions.php:242
-msgid "the featured picture must be 940px width to 315px height or bigger for best performance."
-msgstr "миниатюра должна быть не менее 940px по ширине и 315px по высоте или более для лучшего отображения слайдера."
+#: ../functions.php:236
+msgid ""
+"the featured picture must be 940px width to 315px height or bigger for best "
+"performance."
+msgstr ""
+"миниатюра должна быть не менее 940px по ширине и 315px по высоте или более "
+"для лучшего отображения слайдера."
 
-#: ../functions.php:246
+#: ../functions.php:240
 msgid "Caption for post in slider:"
 msgstr "Комментарий для поста в слайдере:"
 
-#: ../searchform.php:9
-msgid "Enter search keyword"
-msgstr "Ключевое слово для поиска"
+#: ../image.php:16
+msgid "Posted on"
+msgstr "Опубликовано"
 
-#: ../search.php:12
-msgid "Search Results for:"
-msgstr "Результаты поиска для:"
+#: ../image.php:22
+msgid "at"
+msgstr "в"
 
-#: ../search.php:21
+#: ../image.php:23
+msgid "Link to full-size image"
+msgstr "Ссылка на полноразмерное изображение"
+
+#: ../image.php:27
+msgid "Return to"
+msgstr "Вернуться к"
+
+#: ../image.php:90
+msgid "Previous"
+msgstr "Предыдущий"
+
+#: ../image.php:91
+msgid "Next"
+msgstr "Следующий"
+
+#: ../search.php:13
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Результаты поиска для: %s"
+
+#: ../search.php:23
 msgid "Nothing Found"
 msgstr "Ничего не найдено"
 
-#: ../category.php:14
-msgid "Category archives:"
-msgstr "Архив категорий:"
+#: ../searchform.php:10
+msgid "Enter search keyword"
+msgstr "Ключевое слово для поиска"
 
-#: ../comments.php:23
-msgid "One comment on"
-msgstr "Один комментарий на"
+#~ msgid "Daily Archives:"
+#~ msgstr "Архив за день:"
 
-#: ../comments.php:23
-msgid "comments on"
-msgstr "комментариев на"
+#~ msgid "Monthly Archives:"
+#~ msgstr "Архив за месяц:"
 
-#: ../comments.php:32
-msgid "Older comments"
-msgstr "Ранние комментарии"
+#~ msgid "F Y"
+#~ msgstr "М Г"
 
-#: ../comments.php:35
-msgid "Newer comments"
-msgstr "Поздние комментарии"
+#~ msgid "Yearly Archives:"
+#~ msgstr "Архив за год:"
 
-#: ../comments.php:42
-msgid "Comments are closed."
-msgstr "Комментирование закрыто."
+#~ msgid "Y"
+#~ msgstr "Г"
+
+#~ msgid "Archives of"
+#~ msgstr "Архив"
+
+#~ msgid "Archives"
+#~ msgstr "Архив"
+
+#~ msgid "Page"
+#~ msgstr "Страница"
+
+#~ msgid "Category archives:"
+#~ msgstr "Архив категорий:"
+
+#~ msgid "One comment on"
+#~ msgstr "Один комментарий на"
+
+#~ msgid "comments on"
+#~ msgstr "комментариев на"
 
 #~ msgid "Home"
 #~ msgstr "Домашняя страница"
-
-#, fuzzy
-#~ msgid "&nbsp;&ldquo;%2$s&rdquo;"
-#~ msgstr "Один комментарий на &ldquo;%2$s&rdquo;"
 
 #~ msgid "&larr; "
 #~ msgstr "&larr; "

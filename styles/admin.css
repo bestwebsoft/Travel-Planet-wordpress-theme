@@ -2,17 +2,18 @@
 File contains admin styles
 */
 
-	/* Shows the same border as on front end */
-	#headimg h1 a {
-		font-family: 'Open Sans Bold',sans-serif;
-	    font-size: 24px;
-	    margin: 0;
-	    margin-left: 10px;
-	    letter-spacing: 0;
-	    font-weight: 600;
-	    text-decoration: none;
-	}
-	#headimg #desc {
-	    font-size: 13px;
-   	    margin: -20px 0 0 10px;
-	}
+/* Shows the same border as on front end */
+#headimg h1 a {
+	margin: 0;
+	margin-left: 10px;
+	text-decoration: none;
+	letter-spacing: 0;
+	font-weight: 600;
+	font-size: 24px;
+	font-family: 'Open Sans Bold', sans-serif;
+}
+
+#headimg #desc {
+	margin: -20px 0 0 10px;
+	font-size: 13px;
+}

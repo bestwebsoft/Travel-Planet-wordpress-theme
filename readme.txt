@@ -1,17 +1,19 @@
 === Travel Planet ===
-Contributors: the BestWebSoft team
-Tags: white, grey, orange, fixed-layout, right-sidebar, threaded-comments, sticky-post, custom-background, custom-header, custom-menu, translation-ready, featured-images
-Requires at least: 3.7
-Tested up to: 3.9.1
-Stable tag: 1.7
+Contributors: BestWebLayout, BestWebSoft
+Author URI: http://bestweblayout.com/
+Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
+Tags: two-columns, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, sticky-post, threaded-comments, translation-ready
+Requires at least: 4.2
+Tested up to: 4.5.0
+Stable tag: 2.0
 License: GNU General Public License V3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
-Travel Planet WordPress Theme, Copyright 2014 BestWebSoft.com
-Travel Planet is distributed under the terms of the GNU GPL
+Travel Planet WordPress Theme, Copyright 2016 BestWebLayout.com
+Theme Travel Planet is distributed under the terms of the GNU GPL
 
 == Description ==
 
-Are you a traveller who looks for a perfect theme that would highlight your stories without beeing too distracting? Or are you a handyman who wishes to share the knowledge with people wordlwide via simplistic yet utterly elegant blog? Or maybe you seek a theme with an exquisite and balanced interface for a travel or photography magazine? Whether your purposes match or transcend our guesses, we are delighted to introduce Travel Planet - a streamlined and professional theme that will serve as a perfect entourage for your ideas. Travel Planet is ideal for Tourist Agencies, Travel Diaries, Tourist Destinations, Travel Magazines, Travel Guides, Photography, Handmade and DIY Workshops, Cuisine, Event Information, Culture Overviews and Tutorials, or any other purposes you feel are appropriate. Check out this theme's demo at http://bestwebsoft.com/wordpress_demo_theme/travelplanet/
+Are you a traveller who looks for a perfect theme that would highlight your stories without beeing too distracting? Or are you a handyman who wishes to share the knowledge with people wordlwide via simplistic yet utterly elegant blog? Or maybe you seek a theme with an exquisite and balanced interface for a travel or photography magazine? Whether your purposes match or transcend our guesses, we are delighted to introduce Travel Planet - a streamlined and professional theme that will serve as a perfect entourage for your ideas. Travel Planet is ideal for Tourist Agencies, Travel Diaries, Tourist Destinations, Travel Magazines, Travel Guides, Photography, Handmade and DIY Workshops, Cuisine, Event Information, Culture Overviews and Tutorials, or any other purposes you feel are appropriate. Check out this theme's demo at http://wp-demo-theme.bestweblayout.com/travelplanet/
 
 = Features =
 
@@ -30,7 +32,7 @@ Are you a traveller who looks for a perfect theme that would highlight your stor
 
 * Russian (ru_RU)
 
-If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> for <a href="http://support.bestwebsoft.com" target="_blank">BestWebSoft</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
+If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> for <a href="http://support.bestweblayout.com" target="_blank">BestWebLayout</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
 
 = Copyrights for Resources used in this theme = 
 
@@ -95,7 +97,7 @@ For post thumbnails we recommend to use the image width should be not less then 
 
 = Post Formats =
 
-Travel Planet Wordpress do not support formats. All posts will de displayed as regular messages.
+Travel Planet WordPress do not support formats. All posts will de displayed as regular messages.
 
 = Widgets =
 
@@ -105,7 +107,11 @@ The Theme includes a standart Widget.
 
 = How can I change language from English into Russian? =
 
-In the main catalog of your WordPress site find file wp-config.php, open it and change define( ‘WPLANG’, '' ); for define( ‘WPLANG’, ‘ru_RU’ );
+WordPress v4.0 and above:
+Change the language in the admin settings screen. Settings > General > Site Language.
+
+WordPress v3.9.2 and below:
+In the main catalog of your WordPress site, please find wp-config.php file, open it and change define( 'WPLANG', '' ); for define( 'WPLANG', 'ru_RU' );
 
 = Does the theme support widgets? =
 
@@ -120,6 +126,24 @@ You can use background image for the title of your website. Use the menu to sele
 1. Theme home page.
 
 == Changelog ==
+
+= V2.0 - 07.07.2016 =
+* Bugfix: Fixed mismatch coding standards.
+* Bugfix: Fixed theme styles.
+* Update: Unnecessary file category.php have been removed.
+* Update: Screenshot was updated to size 1200x900.
+* Update: Translations has been updated.
+* Update: The theme has been tested for the compatibility with WordPress v.4.5.3.
+* Update: Theme was transferred to new WordPress account.
+
+= V1.9 - 06.04.2015 =
+* Bugfix: Bug in 'wp_title' was fixed.
+
+= V1.8 - 03.04.2015 =
+* Bugfix: Upload attachment function was fixed.
+* Update: We updated the theme to WordPress 4.1.1.
+* Update: Screenshot was updated.
+* Update: The following files were updated: style.css, header.php, functions.php, screenshot.png, script.js.
 
 = V1.7 - 22.07.2014 =
 * Bugfix: Form elements bugs were fixed.
@@ -146,7 +170,16 @@ You can use background image for the title of your website. Use the menu to sele
 = V1.0 - 01.04.2014 =
 * Release date of Travel Planet.
 
-== Upgrade Notice == 
+== Upgrade Notice ==
+
+= V1.9 =
+Bug in 'wp_title' was fixed.
+
+= V2.0 =
+Fixed mismatch coding standards. Fixed theme styles. Unnecessary file category.php have been removed. Screenshot was updated to size 1200x900. Translations has been updated. The theme has been tested for the compatibility with WordPress v.4.5.3. Theme was transferred to new WordPress account.
+
+= V1.8 =
+Upload attachment function was fixed. We updated the theme to WordPress 4.1.1. Screenshot was updated. The following files were updated: style.css, header.php, functions.php, screenshot.png, script.js.
 
 = V1.7 =
 Form elements bugs were fixed.
