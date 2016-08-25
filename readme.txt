@@ -1,11 +1,11 @@
 === Travel Planet ===
 Contributors: BestWebLayout, BestWebSoft
 Author URI: http://bestweblayout.com/
-Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
+Donate link: http://bestwebsoft.com/donate/
 Tags: two-columns, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, sticky-post, threaded-comments, translation-ready
 Requires at least: 4.2
-Tested up to: 4.5.0
-Stable tag: 2.0
+Tested up to: 4.6
+Stable tag: 2.1
 License: GNU General Public License V3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Travel Planet WordPress Theme, Copyright 2016 BestWebLayout.com
@@ -107,11 +107,7 @@ The Theme includes a standart Widget.
 
 = How can I change language from English into Russian? =
 
-WordPress v4.0 and above:
 Change the language in the admin settings screen. Settings > General > Site Language.
-
-WordPress v3.9.2 and below:
-In the main catalog of your WordPress site, please find wp-config.php file, open it and change define( 'WPLANG', '' ); for define( 'WPLANG', 'ru_RU' );
 
 = Does the theme support widgets? =
 
@@ -126,6 +122,9 @@ You can use background image for the title of your website. Use the menu to sele
 1. Theme home page.
 
 == Changelog ==
+
+= V2.1 - 25.08.2016 =
+* Update : All functionality for WordPress 4.6 was updated.
 
 = V2.0 - 07.07.2016 =
 * Bugfix: Fixed mismatch coding standards.
@@ -171,6 +170,9 @@ You can use background image for the title of your website. Use the menu to sele
 * Release date of Travel Planet.
 
 == Upgrade Notice ==
+
+= V2.1 =
+* The compatibility with new WordPress version updated.
 
 = V1.9 =
 Bug in 'wp_title' was fixed.

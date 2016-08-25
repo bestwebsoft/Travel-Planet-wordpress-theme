@@ -19,6 +19,7 @@ get_header(); ?>
 				get_template_part( 'content', get_post_format() );
 				comments_template( '', true );
 			endwhile;
+			global $wp_query;
 			if ( $wp_query->max_num_pages > 1 ) : ?>
 				<nav class="trvlplnt-single-navigation" role="navigation">
 					<div class="trvlplnt-nav-previous wrap"><?php previous_posts_link( '&laquo;&nbsp;' . __( 'Previous page', 'travel-planet' ) ); ?></div>

@@ -9,7 +9,7 @@
 			/* run the currently selected effect */
 			var callbackSlide = function( elem ) {
 				sliderBox = elem;
-			}
+			};
 
 			/* Set navigation */
 			$( '.trvlplnt-slider-to-right' ).click(function() {
@@ -55,10 +55,8 @@
 				setTimeout( function() {
 					isTimeToSlide = true; 
 				}, 900); 
-			};
-
+			}
 		} /* trvlplnt theme slider */
-
 
 		/* trvlplnt theme checkboxes */
 		if ( $( this ).find( 'input[type="checkbox"]' ) ) {
@@ -105,7 +103,6 @@
 			});
 		} /* trvlplnt theme checkboxes */
 
-
 		/* trvlplnt theme radio */
 		if ( $( this ).find( 'input[type="radio"]' ) ) {
 			var fakeRagio = $( '<div class="trvlplnt-fake-radio-container" />' ),
@@ -135,7 +132,6 @@
 					}
 				});
 
-
 				/* events handlers */
 				$( v ).find( 'input[type="radio"]' ).on( 'click', function(){
 					$( v ).find( 'input[name="' + $( this ).attr( 'name' ) + '"]' ).next().removeClass( 'selected' );
@@ -162,7 +158,6 @@
 			}, 600);
 		});
 
-
 		/* trvlplnt theme select */
 
 		/*select section restyle*/
@@ -172,19 +167,22 @@
 			$( 'select' ).eq( k ).after( create_select( k ) );
 		}
 		/*functional of new select*/
-		$( '.trvlplnt-select' ).click( function () {
-			if ( $( this ).find( '.trvlplnt-options' ).css( 'display' ) == 'none' ) {
-				$( this ).css( 'z-index', '100' );
-				$( this ).find( '.trvlplnt-options' ).css( {
-					'display': 'block'
-				});
-			} else {
-				$( this ).css( 'z-index', '10' );
-				$( this ).find( '.trvlplnt-options' ).css( {
-					'display': 'none'
-				});
+
+		$( document ).on( 'click', function( e ) {
+			var container1 = $( '.trvlplnt-select' );
+			if ( !container1.is( e.target ) && container1.has( e.target ).length === 0 ) {
+				container1.find( '.trvlplnt-options' ).hide();
+			} else if ( container1.is( e.target ) || container1.has( e.target ).length !== 0 ) {
+				var container2 = $( e.target ).closest( '.trvlplnt-select' );
+				if ( container2.find( '.trvlplnt-options' ).is( ':visible' ) ) {
+					container2.find( '.trvlplnt-options' ).hide();
+				} else {
+					container1.find( '.trvlplnt-options' ).hide();
+					container2.find( '.trvlplnt-options' ).show();
+				}
 			}
-		});
+		} );
+
 		$( '.trvlplnt-select' ).find( '.trvlplnt-option' ).click( function () {
 			$( this ).closest( '.trvlplnt-select' ).find( '.trvlplnt-option' ).removeClass( 'trvlplnt-option-selected' );
 			$( this ).addClass( 'trvlplnt-option-selected' );
@@ -228,7 +226,6 @@
 			});
 		}/* trvlplnt theme file loader */
 
-
 		/* trvlplnt theme reset button */
 		$( this ).find( 'input[type="reset"]' ).click( function() {
 			var forms = $( this ).parents( 'form' ).first();
@@ -237,11 +234,6 @@
 			forms.find( 'input[type="file"]' ).change();
 		});/* trvlplnt theme reset button */
 
-	});
-} )( jQuery );
-
-( function( $ ) {
-	$(document).ready(function() {
 		/* Check of previous selected items */
 		$( 'select' ).each(function() {
 			var index = $( this ).find( "option[selected]" ).index();
@@ -254,7 +246,7 @@
 			}
 		});
 		/* Clear select elements */
-		$( 'input:reset' ).click( function() {
+		$( 'input:reset' ).click( function(e) {
 			/* Clear original selects. */
 			$( 'select' ).each(function() {
 				/* set path */
@@ -273,23 +265,10 @@
 				clear_select.parent().prev( '.trvlplnt-active-opt' ).find( 'div:first' ).text( clear_select.text() );
 				clear_selected_select.removeClass( 'trvlplnt-option-selected' );
 			});
-			e.preventDefault;
+			e.preventDefault();
 		});
 	});
 } )( jQuery );
-
-/* trvlplnt theme placeholder script */
-function setClear( elem ) {
-    if (elem.value == elem.defaultValue) {
-        elem.value = '';
-    } 
-}
-
-function setDefault( elem ) {
-    if ( ! elem.value) {
-        elem.value = elem.defaultValue;
-    } 
-}
 
 /*function for custom select*/
 function create_select( k ) {
@@ -310,36 +289,37 @@ function create_select( k ) {
 		var count = $( 'select' ).eq( k ).find( 'optgroup' ).size();
 		var optgroups = [];
 		/*create options division*/
+		var i, opt;
 		if ( count ) {
 			var z = 0;
-			for ( var i = 0; i < count; i++ ) {
+			for ( i = 0; i < count; i++ ) {
 				optgroups[i] = document.createElement( 'div' );
 				$( optgroups[i] ).addClass( 'trvlplnt-optgroup' );
 				$( optgroups[i] )
 					.text( $( 'select' ).eq( k ).find( 'optgroup' ).eq( i ).attr( 'label' ) );
-			};
-			for ( var i = 0; i < count; i++ ) {
+			}
+			for ( i = 0; i < count; i++ ) {
 				$( option_array ).append( optgroups[i] );
 				for ( var j = 0; j < $( 'select' ).eq( k ).find( 'optgroup' ).eq( i ).children().size(); j++ ) {
-					var opt = document.createElement( 'div' );
+					opt = document.createElement( 'div' );
 					$( opt ).addClass( 'trvlplnt-option' );
 					$( opt ).attr( 'value', $( 'select' ).eq( k ).find( 'optgroup' ).eq( i ).children().eq( j ).attr( 'value' ) );
 					$( opt ).text( $( 'select' ).eq( k ).find( 'optgroup' ).eq( i ).children().eq( j ).text() );
 					$( opt ).attr( 'name', z );
 					z++;
 					$( option_array ).append( opt );
-				};
-			};
+				}
+			}
 		} else {
-			for ( var i = 0; i < $( 'select' ).eq( k ).find( 'option' ).size(); i++ ) {
-				var opt = document.createElement( 'div' );
+			for ( i = 0; i < $( 'select' ).eq( k ).find( 'option' ).size(); i++ ) {
+				opt = document.createElement( 'div' );
 				$( opt ).addClass( 'trvlplnt-option' );
 				$( opt ).attr( 'value', $( 'select' ).eq( k ).find( 'option' ).eq( i ).attr( 'value' ) );
 				$( opt ).attr( 'name', i );
 				$( opt ).text( $( 'select' ).eq( k ).find( 'option' ).eq( i ).text() );
 				$( option_array ).append( opt );
-			};
-		};
+			}
+		}
 		$( sel ).append( active_opt );
 		$( sel ).append( option_array );
 	} )( jQuery );

@@ -10,7 +10,7 @@
 <footer id="footer" role="contentinfo">
 	<div class="trvlplnt-footer-box">
 		<div class="trvlplnt-footer-title alignleft">
-			<p>&copy; 2013-<?php echo date_i18n( 'Y' ); ?> <?php bloginfo( 'name' ); ?></p>
+			<p>&copy; 2013-<?php echo date_i18n( 'Y ' ) . get_bloginfo( 'name' ); ?></p>
 		</div>
 		<div class="trvlplnt-footer-powered alignright">
 			<p><?php _e( 'Powered by', 'travel-planet' ); ?>

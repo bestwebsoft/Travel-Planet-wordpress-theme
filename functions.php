@@ -14,13 +14,13 @@
  * @subpackage Travel Planet
  * @since      Travel Planet 1.4
  */
+/* Sets up the content width value based on the theme's design. */
+if ( ! isset( $content_width ) ) {
+	$content_width = 580;
+}
 
 /* Travel Planet Theme Setup */
 function trvlplnt_theme_setup() {
-	/* Sets up the content width value based on the theme's design. */
-	if ( ! isset( $content_width ) ) {
-		$content_width = 580;
-	}
 	/* Makes Travel Planet available for translation.
 	   Translations can be added to the /languages/ directory. */
 	load_theme_textdomain( 'travel-planet', get_template_directory() . '/languages' );
@@ -83,8 +83,6 @@ function trvlplnt_set_js_css() {
 	if ( is_singular() && comments_open() ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-	/* Run JQuerry js */
-	wp_enqueue_script( 'jquery' );
 	/* Add style */
 	wp_enqueue_style( 'trvlplnt-style', get_stylesheet_uri(), array(), '' );
 	/* Loads the Internet Explorer specific stylesheet. */
@@ -101,6 +99,7 @@ function trvlplnt_set_js_css() {
 	wp_enqueue_script( 'trvlplnt-pseudoclasses-script', get_template_directory_uri() . '/js/selectivizr-min.js', array( 'jquery' ) );
 	/* Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. */
 	wp_enqueue_script( 'trvlplnt-support-script', get_template_directory_uri() . '/js/html5.js', array( 'jquery' ) );
+	wp_script_add_data( 'trvlplnt-support-script', 'conditional', 'lt IE 9' );
 	/* Travel Blog Js scripts localization */
 	$translation_array = array(
 		'choose_file'          => __( 'Choose file...', 'travel-planet' ),

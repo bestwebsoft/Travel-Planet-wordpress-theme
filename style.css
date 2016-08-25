@@ -4,7 +4,7 @@ Theme URI: http://bestweblayout.com/products/travel-planet/
 Author: BestWebLayout
 Author URI: http://bestweblayout.com/
 Description: Are you a traveller who looks for a perfect theme that would highlight your stories without beeing too distracting? Or are you a handyman who wishes to share the knowledge with people wordlwide via simplistic yet utterly elegant blog? Or maybe you seek a theme with an exquisite and balanced interface for a travel or photography magazine? Whether your purposes match or transcend our guesses, we are delighted to introduce Travel Planet - a streamlined and professional theme that will serve as a perfect entourage for your ideas. Travel Planet is ideal for Tourist Agencies, Travel Diaries, Tourist Destinations, Travel Magazines, Travel Guides, Photography, Handmade and DIY Workshops, Cuisine, Event Information, Culture Overviews and Tutorials, or any other purposes you feel are appropriate. Check out this theme's demo at http://wp-demo-theme.bestweblayout.com/travelplanet/
-Version: 2.0
+Version: 2.1
 License: GNU General Public License v3
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
 Tags: two-columns, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, sticky-post, threaded-comments, translation-ready
@@ -1240,7 +1240,6 @@ select {
 
 .trvlplnt-select {
 	position: relative;
-	z-index: 10;
 	margin: 0 0 10px 0;
 	width: 222px;
 	height: 37px;
@@ -1275,6 +1274,7 @@ select {
 	width: 220px;
 	border: 1px solid #ddd;
 	background-color: #fff;
+	z-index: 10;
 }
 
 .trvlplnt-options .trvlplnt-optgroup:first-child {
